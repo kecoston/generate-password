@@ -1,6 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
+// Add event listener to generate button
+
+generateBtn.addEventListener("click", function(event) {
+
+
 // Ive added the split on the variable to break up the array. 
 var lowerOp = "abcdefghijklmnopqrstuvwxyz".split("")
 var upperOp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -20,10 +26,11 @@ var special = confirm("Would you like to use special characters?");
 // This converts the users input to numbers
 lengthPass = parseInt(lengthPass)
 
+
 // This function is a loop that pulls the users input and creates the chosenArray
 function addToArray(confirm, arr){
     if (confirm) {
-        for (let i = 0; i<arr.length; i++){
+        for (let i = 8; i<arr.length; i++){
             chosenArray.push(arr[i])
         }
 
@@ -62,6 +69,8 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+generatePassword()
 
-generateBtn.addEventListener("click", writePassword);
+writePassword()
+
+});
