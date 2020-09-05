@@ -18,6 +18,15 @@ var chosenArray = []
 
 // These are the prompts that will direct the user to select the elements for the password
 var lengthPass = prompt("How many characters would you like your password to be? Length can be between 8- 128 characters");
+
+if (lengthPass < 8 ){
+    var lengthPass = prompt("Please pick a length between 8- 128 characters");
+ 
+}
+else if (lengthPass > 128){
+    var lengthPass = prompt("Please pick a length between 8- 128 characters");
+}
+
 var lowerLetters = confirm("Would you like to use lowercase letters?");
 var upperLetters = confirm("Would you like to use uppercase letters?");
 var num = confirm("Would you like to use numbers?");
