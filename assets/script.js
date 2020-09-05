@@ -35,7 +35,6 @@ var special = confirm("Would you like to use special characters?");
 // This converts the users input to numbers
 lengthPass = parseInt(lengthPass)
 
-
 // This function is a loop that pulls the users input and creates the chosenArray
 function addToArray(confirm, arr){
     if (confirm) {
@@ -52,7 +51,6 @@ addToArray(lowerLetters, lowerOp)
 addToArray(upperLetters, upperOp)
 addToArray(num, numOp)
 addToArray(special, specialCharOp)
-
 
 // This function is a loop that pulls the number of characters requested from the user and creates a random pull of characters
 // from the chosenArray to generate the password. 
